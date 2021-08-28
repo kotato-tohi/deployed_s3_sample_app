@@ -1,0 +1,6 @@
+- name: cloned project repo
+  git:
+    repo: "{{ __git_repo_url }}"
+    dest: /var/www/{{ __pj_name }}
+    force: yes
+

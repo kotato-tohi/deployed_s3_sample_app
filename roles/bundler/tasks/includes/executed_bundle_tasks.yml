@@ -1,0 +1,9 @@
+- name: executed bundle installe
+  shell: bash -lc "bundle install"
+  args: 
+    chdir: /var/www/{{__pj_name}}
+
+- name: executed rails db:create
+  shell: bash -lc "bundle exec rails db:create && bundle exec rails db:migrate"
+  args:
+    chdir: /var/www/{{__pj_name}}

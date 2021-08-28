@@ -1,0 +1,7 @@
+- name: exist project dir
+  file:
+    path: /var/www/{{__pj_name}}
+    state: directory
+    owner: "{{__working_user}}"
+    group: "{{__working_user}}"
+  become: yes
