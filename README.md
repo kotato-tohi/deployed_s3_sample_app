@@ -2,12 +2,12 @@
 hosts
 ```
 [target]
-18.183.192.11
+<IP ADDRESS>
 
 [target:vars]
-ansible_ssh_port=22
-ansible_ssh_user=ec2-user
-ansible_ssh_private_key_file=~/.ssh/common_key.pem
+ansible_ssh_port= <ssh接続ポート>
+ansible_ssh_user= <ssh接続ユーザ>
+ansible_ssh_private_key_file= <ssh 秘密鍵パス>
 ```
 
 group_vars/target
