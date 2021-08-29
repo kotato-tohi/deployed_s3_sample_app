@@ -3,7 +3,7 @@
   args: 
     chdir: /var/www/{{__pj_name}}
 
-- name: executed rails db:create
+- name: executed rails db:create/migrates
   shell: bash -lc "bundle exec rails db:create && bundle exec rails db:migrate"
   args:
     chdir: /var/www/{{__pj_name}}
